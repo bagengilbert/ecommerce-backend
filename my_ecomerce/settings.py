@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'my_ecommerce_db',
         'USER': 'my_user',
         'PASSWORD': 'junior2020',
-        'HOST': 'localhost',
+        'HOST': '192.168.88.253',
         'PORT': '5432',
     }
 }
