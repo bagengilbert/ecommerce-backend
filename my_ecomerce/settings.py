@@ -25,7 +25,14 @@ SECRET_KEY = 'django-insecure-*1(dz9jqw6h1v4i6rqlq!!wr^)n*0u_4kv9!9t^z5$-q+uws0n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [
+    '127.0.0.1',        # Localhost
+    'localhost',        # Localhost
+    '192.168.88.253',   # Your IP
+    '172.17.0.1',       # Your other IP
+    'fe80::1363:ef35:c4e4:9ccb%wlp2s0', # Your collaborator's IPv6 address
+    '192.168.0.120'     # Your collaborator's IP
+]
 
 
 # Application definition
@@ -76,7 +83,6 @@ WSGI_APPLICATION = 'my_ecomerce.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
