@@ -86,14 +86,13 @@ WSGI_APPLICATION = 'my_ecomerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ecommercedb',  # Your actual database name
-        'USER': 'my_user',       # Database username
-        'PASSWORD': 'junior2020', # Database password
-        'HOST': '192.168.88.253', # Replace with your PostgreSQL server's IP address
-        'PORT': '5432',          # Default PostgreSQL port
+        'NAME': 'ecommercedb',  # Name of the database you created
+        'USER': 'my_user',       # The PostgreSQL user you created
+        'PASSWORD': 'junior2020',  # The password for that user
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
-
 # Use the custom user model
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
