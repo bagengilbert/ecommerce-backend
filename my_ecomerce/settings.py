@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'my_ecomerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'my_ecommerce_db',
-        'USER': 'my_user',
-        'PASSWORD': 'junior2020',
-        'HOST': '192.168.88.253',
-        'PORT': '5432',
+        'NAME': 'ecommercedb',  # Your actual database name
+        'USER': 'my_user',       # Database username
+        'PASSWORD': 'junior2020', # Database password
+        'HOST': '192.168.88.253', # Replace with your PostgreSQL server's IP address
+        'PORT': '5432',          # Default PostgreSQL port
     }
 }
 
